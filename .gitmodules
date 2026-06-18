@@ -1,0 +1,3 @@
+[submodule "arcadianengine"]
+	path = arcadianengine
+	url = https://github.com/theinfinityglitch/arcadianengine.git

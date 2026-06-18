@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/ArcadianEngine/" >
+    <Project Path="arcadianengine/src/ArcadianEngine/ArcadianEngine.csproj" />
+  </Folder>
+  <Project Path="Source/VerySeriousWarmup/VerySeriousWarmup.csproj" />
+</Solution>
