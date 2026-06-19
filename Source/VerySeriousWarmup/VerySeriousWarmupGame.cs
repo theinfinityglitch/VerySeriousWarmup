@@ -10,7 +10,7 @@ public class VerySeriousWarmupGame : ArcadianGame<VerySeriousWarmupGame>
 {
     public override void OnInitialize()
     {
-        Console.WriteLine("Hello, World!");
+        Context.Game.Window.AllowUserResizing = true;
         Context.InsertSystem<Update, TestSystem>(new TestSystem(Context));
         Context.Game.World.CreateEntity(new TestComponent());
     }
