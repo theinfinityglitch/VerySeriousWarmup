@@ -19,4 +19,9 @@ public class VerySeriousWarmupGame : ArcadianGame<VerySeriousWarmupGame>
     {
         base.OnUpdate(time);
     }
+
+    public override void OnDraw()
+    {
+        base.OnDraw();
+    }
 }
