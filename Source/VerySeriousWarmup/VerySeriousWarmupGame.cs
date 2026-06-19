@@ -1,11 +1,22 @@
 using ArcadianEngine;
+using Friflo.Engine.ECS;
+using Microsoft.Xna.Framework;
+using VerySeriousWarmup.Components;
+using VerySeriousWarmup.Systems;
 
 namespace VerySeriousWarmup;
 
-public class VerySeriousWarmupGame : IArcadianGame<VerySeriousWarmupGame>
+public class VerySeriousWarmupGame : ArcadianGame<VerySeriousWarmupGame>
 {
-    public void OnInitialize(GameContext<VerySeriousWarmupGame> cx)
+    public override void OnInitialize()
     {
         Console.WriteLine("Hello, World!");
+        Context.InsertSystem<Update, TestSystem>(new TestSystem(Context));
+        Context.Game.World.CreateEntity(new TestComponent());
+    }
+
+    public override void OnUpdate(GameTime time)
+    {
+        base.OnUpdate(time);
     }
 }

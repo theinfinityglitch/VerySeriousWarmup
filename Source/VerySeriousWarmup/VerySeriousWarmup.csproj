@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\arcadianengine\src\ArcadianEngine\ArcadianEngine.csproj">
+    <ProjectReference Include="..\..\arcadianengine\Source\ArcadianEngine\ArcadianEngine.csproj">
       <IncludeAssets>all</IncludeAssets>
     </ProjectReference>
   </ItemGroup>
