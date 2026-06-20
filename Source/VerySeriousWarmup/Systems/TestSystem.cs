@@ -1,7 +1,7 @@
 using ArcadianEngine;
 using ArcadianEngine.Resources;
 using Friflo.Engine.ECS.Systems;
-using Microsoft.Xna.Framework;
+using Raylib_cs;
 using VerySeriousWarmup.Components;
 
 namespace VerySeriousWarmup.Systems;
@@ -18,7 +18,7 @@ public class TestSystem(GameContext<VerySeriousWarmupGame> Context) : QuerySyste
             (ref tc, entity) =>
             {
                 Console.WriteLine(tc.SomeRandomData);
-                rp.DrawRect(new Rectangle(20, 20, 100, 50), Color.Blue);
+                rp.DrawRect(new(10, 50, 50, 10), Color.Blue);
             }
         );
     }
